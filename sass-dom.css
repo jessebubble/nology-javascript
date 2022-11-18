@@ -1,0 +1,64 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  width: 25%;
+  height: 500px;
+  padding: 30px;
+  grid-template-areas: "image image image" "image image image" "image image image" "image image image" "card card card" "card card card" "card card card" "card card card";
+}
+.grid-container h1 {
+  text-align: left;
+  color: #000000;
+  font-size: 24px;
+  font-weight: medium;
+}
+.grid-container p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: left;
+}
+.grid-container button {
+  color: #000000;
+  font-size: 14px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.grid-container button:hover {
+  background-color: #00ccff;
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+}
+.grid-container input {
+  border: none;
+  border-bottom: 1px solid #757575;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #757575;
+}
+.grid-container input:focus {
+  outline: none;
+}
+.grid-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+.grid-container .image {
+  grid-area: image;
+}
+.grid-container .card {
+  grid-area: card;
+}/*# sourceMappingURL=sass-dom.css.map */

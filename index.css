@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.hero-container {
+    display: flex;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.hero-text > h1 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 3px;
+}
+.hero-text > p {
+    font-size: 16px;
+    color: #343434;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}

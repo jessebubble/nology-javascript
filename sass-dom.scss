@@ -1,0 +1,81 @@
+$primary-color: #000000;
+$secondary-color: #757575;
+$tertiary-color: #00ccff;
+$font-md: 24px;
+$font-sm: 14px;
+
+@mixin headingStyles {
+    font-size: $font-md;
+    color: $primary-color;
+    text-align: center;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.grid-container {
+    display: grid;
+    width: 25%;
+    height: 500px;
+    padding: 30px;
+    grid-template-areas:
+        "image image image"
+        "image image image"
+        "image image image"
+        "image image image"
+        "card card card"
+        "card card card"
+        "card card card"
+        "card card card";
+    h1 {
+        text-align: left;
+        color: $primary-color;
+        font-size: $font-md;
+        font-weight: medium;
+    }
+    p {
+        color: $secondary-color;
+        font-size: $font-sm;
+        font-weight: lighter;
+        text-align: left;
+    }
+    button {
+        color: $primary-color;
+        font-size: $font-sm;
+        font-weight: lighter;
+        border: none;
+        border-radius: 2px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    button:hover {
+        background-color: $tertiary-color;
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: all 0.5s ease;
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid $secondary-color;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: $font-sm;
+        font-weight: lighter;
+        color: $secondary-color;
+    }
+    input:focus {
+        outline: none;
+    }
+    img {
+        object-fit: cover;
+        border-radius: 2px;
+    }
+    .image {
+        grid-area: image;
+    }
+    .card {
+        grid-area: card;
+    }
+}
