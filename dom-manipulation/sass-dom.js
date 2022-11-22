@@ -55,4 +55,9 @@ const japan = document.querySelector("#japan__title");
             japan.style.fontWeight='bold'
         });
 
-const japanInput = document.querySelector("#japan__input");
+const japanInput = document.querySelector('input[type="text"]');
+    japanInput.addEventListener("focus", () => {
+        log.textContent = "focus";
+        input.querySelector("#japan__input")
+        .textinput = "Focus manipulation!";
+    });
