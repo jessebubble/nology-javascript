@@ -14,12 +14,9 @@ let geographicLocation = ["London", "Australia", "Sweden"];
 let jobTitle = ["musician", "singer", "songwriter"];
 
 const getDescription = (numberOfChildren, partnersName, geographicLocation, jobTitle) => {
-    numberOfChildren[0];
-    partnersName[0];
-    geographicLocation[0];
-    jobTitle[0];
+  console.log(`I am currently a ${jobTitle[2]} living in ${geographicLocation[1]}, and married to ${partnersName[2]} with ${numberOfChildren[0]} kids.`);
 }
-console.log(`I am currently a ${jobTitle[2]} living in ${geographicLocation[1]}, and married to ${partnersName[2]} with ${numberOfChildren[0]} kids.`);
+getDescription(numberOfChildren, partnersName, geographicLocation, jobTitle);
 
 /*  2. Lifetime Supply of Snickers
 Write a function named calculateSupply that has 2 parameters: 
@@ -39,10 +36,9 @@ let amountPerDay = [1.5, 2.5, 3.5];
 const maxAge = 70;
 
 const calculateSupply = (age, amountPerDay) => {
-    age[0];
-    amountPerDay[0];
+  console.log(`You will need ${(Math.round(amountPerDay[0] * 365))} snickers to last you until the ripe old age of ${(maxAge - age[1])}.`);
 }
-console.log(`You will need ${(Math.round(amountPerDay[0] * 365))} snickers to last you until the ripe old age of ${(maxAge - age[1])}.`);
+calculateSupply(age, amountPerDay);
 
 /* Functions Challenge
 1. Calculate Area
