@@ -1,0 +1,79 @@
+* {
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main > div {
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+h1 {
+    font-size: 24px;
+    color: #ff00ff;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+button {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffff00;
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-box > input {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+}
+::placeholder {
+    color: #cccccc;
+}
+.search-box > h1 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.music-player {
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.music-player > h1 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+audio {
+    margin-bottom: 6px;
+}
